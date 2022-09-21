@@ -1,0 +1,108 @@
+.main-home{
+    padding: 5px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    overflow-y: scroll;
+}
+
+.main-home-track{
+    padding: 5px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.track{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    background-color: #0a013bdd;
+    padding: 20px;
+    border-radius: 15px;
+    border: groove #000;
+    border-width: 3px;
+}
+
+.track-image{
+    margin: 10px;
+    border: solid #fff;
+    border-width: 3px;
+}
+
+.track-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.link-button {
+    border-radius: 10px;
+    background: #256ce1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.link-button.share{
+    background: green;
+}
+
+.button-text{
+    color:aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.song-details{
+    font-weight: 900;
+    color:whitesmoke;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.song-details.title{
+    font-size: 30px;
+}
+
+.song-details.description{
+    font-size: 15px;
+}
+
+.song-details.artist{
+    font-size: 27px;
+}
+
+.song-details.song-album{
+    font-size: 24px;
+}
+
+.song-details.duration{
+    font-size: 21px;
+}
+
+.song-details.rank{
+    font-size: 18px;
+}
+
+.song-details.release{
+    font-size: 15px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: indianred;
+}
+
+.preview{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

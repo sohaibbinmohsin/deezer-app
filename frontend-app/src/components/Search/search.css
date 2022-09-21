@@ -1,0 +1,22 @@
+.search-link-button {
+    border-radius: 10px;
+    background: #94b40a;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 250px;
+    /* margin-top: 10px; */
+}
+
+.result-details{
+    height: 80px;
+    width: 1000px;
+    flex-direction: row;
+    background-color: #361eb9c3;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}

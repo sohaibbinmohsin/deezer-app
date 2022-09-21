@@ -1,0 +1,45 @@
+.favorite-main{
+    display: flex;
+    flex-direction: row;
+    background-color: #5848b5c3;
+    padding: 5px;
+    margin-top: 20px;
+    overflow: auto;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.favorite-track{
+    height: 500px;
+    width: 350px;
+    margin-top: 30px;
+    background-color: #0a013bdd;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid #fff;
+    border-width: 3px;
+}
+
+.fav-details-display{
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.fav-details{
+    font-weight: 900;
+    color:whitesmoke;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.fav-details.title{
+    font-size: 20px;
+}

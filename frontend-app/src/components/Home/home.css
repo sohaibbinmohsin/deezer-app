@@ -1,0 +1,63 @@
+.main-home{
+    padding: 5px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    overflow-y: scroll;
+}
+
+.charts{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.display-box{
+    height: 370px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: #0a013bdd;
+    display: flex;
+    padding: 15px;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display-box.album{
+    height: 350px;
+}
+
+.display-box.artist{
+    height: 320px;
+}
+
+.display-box.playlist{
+    height: 350px;
+}
+
+.title{
+    font-size: large;
+    padding: 5px;
+    color:aliceblue;
+    text-align: center;
+    font-weight: bolder;   
+}
+
+.title-next{
+    font-size: medium;
+    padding: 5px;
+    color:aliceblue;
+}
+
+.title-next-next{
+    font-size: small;
+    padding: 5px;
+    color:aliceblue;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}

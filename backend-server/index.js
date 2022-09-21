@@ -4,8 +4,8 @@ import express from "express";
 const PORT = process.env.PORT || 8080;
 
 const app = express();
-const appId = {{APP_ID}};
-const secretKey = {{SECRET_KEY}};
+const appId = 55672;
+const secretKey = 'cf573acaa5ab7f0038ace271ec3aedea';
 let credentials = {
     access_token: '',
     signedIn: false
