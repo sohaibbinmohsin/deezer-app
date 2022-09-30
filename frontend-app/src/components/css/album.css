@@ -1,0 +1,139 @@
+.main-home{
+    padding: 5px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    overflow-y: scroll;
+}
+
+.main-home-album{
+    padding: 5px;
+    margin-top: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.album{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    background-color: #0a013bdd;
+    padding: 20px;
+    border-radius: 15px;
+    border: groove #000;
+    border-width: 3px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.tr{
+    flex-direction: row;
+    height: 600px;
+    overflow-y: scroll;
+    background-color: #5848b5c3;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.tr-details{
+    height: 80px;
+    width: 1000px;
+    flex-direction: row;
+    background-color: #361eb9c3;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* overflow-x: scroll; */
+}
+
+.tr-inner-details{
+    color:whitesmoke;
+    font-size:15px;
+    padding: 5px;
+    align-items: flex-start;
+    margin:10px;
+}
+
+.tr-inner-details.title{
+    width: 280px;
+}
+.tr-inner-details.duration{
+    width: 100px;
+}
+
+.album-image{
+    margin: 10px;
+    border: solid #fff;
+    border-width: 3px;
+}
+
+.album-image.playlist{
+    border: none;
+}
+
+.album-details{
+    font-weight: 900;
+    color:whitesmoke;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.album-details.name{
+    font-size: 27px;
+}
+
+.album-details.artist{
+    font-size: 24px;
+}
+
+.album-details.duration{
+    font-size: 21px;
+}
+
+.album-details.rank{
+    font-size: 18px;
+}
+
+.album-details.release{
+    font-size: 15px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: indianred;
+}
+
+.link-button {
+    border-radius: 10px;
+    background: #256ce1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.link-button.share{
+    background: green;
+}
+
+.link-button.artist{
+    width: 230px;
+}
+.link-button.share.artist{
+    background: green;
+    width: 230px;
+    margin-top: 10px;
+}

@@ -1,11 +1,11 @@
 import fetch from "node-fetch";
 import express from "express";
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
-const appId = 55672;
-const secretKey = 'cf573acaa5ab7f0038ace271ec3aedea';
+const appId = '{{APP_ID}}';
+const secretKey = '{{SECRET_KEY}}';
 let credentials = {
     access_token: '',
     signedIn: false
@@ -28,6 +28,7 @@ const callApiAndSendResponseToClient = async(url, options, res) => {
     try {
       const response = await fetch(url, options);
       const content = await response.json();
+      console.log(content)
       res.send(content);
     } catch (error) {
       res.send(error)
@@ -47,7 +48,7 @@ const getAccessToken = async(url, options, res, cred) => {
 }
 
 app.get("/top-tracks", (req, res) => {
-    const url = new URL("https://api.deezer.com/chart/0/tracks");
+    const url = new URL("https://api.deezer.com/chart/132/tracks");
     const headerParameters = {
         contentType: "application/json",
     };
@@ -250,7 +251,7 @@ app.get("/search", (req, res) => {
 
 app.get("/sign-in", (req, res) => {
     const code = req.query.code;
-    let url = new URL(`https://connect.deezer.com/oauth/access_token.php?app_id=${appId}&secret=${secretKey}&code=${code}`);
+    let url = new URL(`https://connect.deezer.com/oauth/access_token.php?app_id=${appId}&secret=${secretKey}&code=${code}&output=json`);
     const headerParameters = {
         contentType: "application/json",
     };
